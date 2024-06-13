@@ -1,0 +1,21 @@
+{
+  "gamedata" :  [
+    {
+    "name":   "Jedi Fallen Order",
+    "year": 2019,
+    "rating": 94,
+    "developer": "Respawn Entertainment"
+  },
+  {
+    "name": "Jedi Survivor",
+    "year": 2023,
+    "rating": 90,
+    "developer": "Respawn Entertainment"
+  },
+  {
+    "name" : "Assassins Creed Black Flag",
+    "year": 2013,
+    "rating": 95,
+    "developer": "Ubisoft"
+  }
+    ]}
