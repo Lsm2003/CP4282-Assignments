@@ -1,6 +1,6 @@
 import { Text, Image } from 'react-native';
 
-export default function Games( props ) {
+export default function Games(props) {
 
   return (
   <>

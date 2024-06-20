@@ -15,16 +15,16 @@ export default function Button({ label , onPress, isActive}) {
 
 const styles = StyleSheet.create({
   button: {
-    padding: 8,
-    margin: 4,
+    padding: 5,
+    margin: 5,
     backgroundColor: 'gray',
     borderRadius: 5,
     alignItems: 'center',
   },
   activeButton: {
-    backgroundColor: 'black',
+    backgroundColor: 'blue',
   },
   text: {
-    color: 'white',
+    color: 'black',
   },
 });
