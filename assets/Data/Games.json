@@ -4,18 +4,21 @@
     "name":   "Jedi Fallen Order",
     "year": 2019,
     "rating": 94,
-    "developer": "Respawn Entertainment"
-  },
+    "developer": "Respawn Entertainment",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Cover_art_of_Star_Wars_Jedi_Fallen_Order.jpg/220px-Cover_art_of_Star_Wars_Jedi_Fallen_Order.jpg"
+    },
   {
     "name": "Jedi Survivor",
     "year": 2023,
     "rating": 90,
-    "developer": "Respawn Entertainment"
+    "developer": "Respawn Entertainment",
+    "image": "https://lumiere-a.akamaihd.net/v1/images/sw-jedi-survivor-key-art-1080x1080_c38222d5.jpeg?region=0,0,1080,1080"
   },
   {
     "name" : "Assassins Creed Black Flag",
     "year": 2013,
     "rating": 95,
-    "developer": "Ubisoft"
+    "developer": "Ubisoft",
+    "image": "https://upload.wikimedia.org/wikipedia/en/2/28/Assassin%27s_Creed_IV_-_Black_Flag_cover.jpg"
   }
     ]}
