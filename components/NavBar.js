@@ -4,7 +4,7 @@ import { Pressable, View, Text, StyleSheet } from "react-native";
 export default function NavBar() {
     return (
         <View style={styles.navBar}>
-            <Link href={"/update"} asChild>
+            <Link href={"/edit"} asChild>
                 <Pressable style={styles.button}>
                     <Text style={styles.text}>Edit</Text>
                 </Pressable>
@@ -22,18 +22,19 @@ const styles = StyleSheet.create({
     navBar: {
         flexDirection: "row",
         justifyContent: "space-around",
-        backgroundColor: "#470000",
-        paddingVertical: 15,
+        backgroundColor: "#2c3e50",
+        paddingVertical: 10,
     },
     button: {
         paddingVertical: 10,
         paddingHorizontal: 20,
-        backgroundColor: 'lightgray',
+        backgroundColor: '#34495e',
+        borderRadius: 5,
         alignItems: 'center',
     },
     text: {
-        color: 'black',
-        fontSize: 24,
+        color: 'white',
+        fontSize: 16,
         fontWeight: 'bold',
     },
 });

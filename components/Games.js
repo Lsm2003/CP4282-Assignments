@@ -1,30 +1,27 @@
 import { Text, Image, StyleSheet, View } from 'react-native';
-import { useContext } from 'react';
-import { GameContext } from "../components/GameContext"
 
-export default function Games(props) {
-  const gameinfo = useContext(GameContext)
-  console.log(gameinfo)
-  return (
+export default function Games({props}) {
+
+{return (
   <View style={styles.container}>
-    <Text style={styles.name}>{gameinfo[props.gameindex].name}</Text>
-    <Image source={{uri: `${gameinfo[props.gameindex].image}`}} style={styles.image}/>
-    <Text style={styles.year}>{gameinfo[props.gameindex].year}</Text>
-    <Text style={styles.rating}>{gameinfo[props.gameindex].rating}</Text>
-    <Text style={styles.developer}>{gameinfo[props.gameindex].developer}</Text>
+    <Text style={styles.name}>{props["name"]}</Text>
+    <Image source={{uri: `${props["imagelink"]}`}} style={styles.image}/>
+    <Text style={styles.year}>{props["year"]}</Text>
+    <Text style={styles.rating}>{props["rating"]}</Text>
+    <Text style={styles.developer}>{props["developer"]}</Text>
 </View>
   );
-}
+}}
 
 const styles = StyleSheet.create ({
   container: {
     flex: 1,
-    padding: 20,
-    backgroundColor: 'white',
+    padding: 16,
+    backgroundColor: '#f5f5f5',
     alignItems: 'center',
   },
   name: {
-    fontSize: 28,
+    fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 8,
   },
@@ -35,20 +32,17 @@ const styles = StyleSheet.create ({
   },
   year: {
     fontSize: 18,
-    color: 'black',
+    color: '#888',
     marginBottom: 4,
-    fontWeight: 'bold',
   },
   rating: {
     fontSize: 18,
-    color: 'black',
+    color: '#888',
     marginBottom: 4,
-    fontWeight: 'bold',
   },
   developer: {
     fontSize: 18,
-    color: 'black',
-    fontWeight: 'bold',
+    color: '#888',
   },
   error: {
     fontSize: 18,

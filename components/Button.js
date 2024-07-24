@@ -4,7 +4,7 @@ export default function Button({ label, onPress, isActive }) {
   return (
     <View style={styles.buttonContainer}>
       <Pressable
-        style={({pressed}) => [
+        style={({ pressed }) => [
           styles.button,
           isActive && styles.activeButton,
           pressed && styles.pressedButton,
@@ -22,17 +22,21 @@ const styles = StyleSheet.create({
     margin: 10,
   },
   button: {
-    paddingVertical: 12,
-    paddingHorizontal: 25,
+    paddingVertical: 10,
+    paddingHorizontal: 20,
     backgroundColor: 'gray',
+    borderRadius: 5,
     alignItems: 'center',
   },
   activeButton: {
-    backgroundColor: 'lightblue',
+    backgroundColor: '#3498db',
+  },
+  pressedButton: {
+    backgroundColor: '#2980b9',
   },
   text: {
-    color: 'black',
-    fontSize: 20,
+    color: 'white',
+    fontSize: 16,
     fontWeight: 'bold',
   },
 });
